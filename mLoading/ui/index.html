@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mLoading</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="loading">
+        <div class="logo-header">
+            <img src="img/logo.png" alt="Logo du serveur" class="server-logo">
+        </div>
+
+        <div class="logo-container">
+            <h1>MoonV</h1>
+            <p>Roleplay</p>
+        </div>
+
+        <div class="container-progressbar">
+            <div class="progressbar-novalue">
+                <div class="progressbar-value"></div>
+            </div>
+            <div class="text-progress">0%</div>
+        </div>
+
+        <div class="music-player">
+            <div class="song-info">
+                <div id="song-title">Titre de la musique</div>
+                <div id="artist">Artiste inconnu</div>
+            </div>
+            <div class="music-progress">
+                <span id="current-time">0:00</span>
+                <div class="slider-container">
+                    <div class="progress-bg">
+                        <div class="progress-fill" id="progress-fill"></div>
+                    </div>
+                    <input type="range" id="progress-slider" min="0" max="100" value="0" class="slider" aria-label="Progression de la musique">
+                </div>
+                <span id="duration">0:00</span>
+            </div>
+            <div class="music-controls">
+                <button id="prev-btn" title="Précédent">
+                    <i class="fas fa-step-backward"></i>
+                </button>
+                <button id="play-btn" title="Lecture/Pause">
+                    <i class="fas fa-play"></i>
+                </button>
+                <button id="next-btn" title="Suivant">
+                    <i class="fas fa-step-forward"></i>
+                </button>
+                <div class="volume-control">
+                    <button id="volume-btn" title="Son">
+                        <i class="fas fa-volume-up"></i>
+                    </button>
+                    <div class="volume-slider-container">
+                        <div class="volume-progress-bg">
+                            <div class="volume-progress-fill" id="volume-progress-fill"></div>
+                        </div>
+                        <input type="range" id="volume-slider" min="0" max="1" step="0.1" value="1" class="volume-slider">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="social-links">
+            <a href="https://discord.gg/tvT6TNsy" class="social-link discord" target="_blank" rel="noopener noreferrer" title="Discord">
+                <i class="fab fa-discord"></i>
+            </a>
+            <a href="https://discord.gg/tvT6TNsy" class="social-link tiktok" target="_blank" rel="noopener noreferrer" title="TikTok">
+                <i class="fab fa-tiktok"></i>
+            </a>
+            <a href="https://discord.gg/tvT6TNsy" class="social-link instagram" target="_blank" rel="noopener noreferrer" title="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://discord.gg/tvT6TNsy" class="social-link youtube" target="_blank" rel="noopener noreferrer" title="YouTube">
+                <i class="fab fa-youtube"></i>
+            </a>
+            <a href="https://discord.gg/tvT6TNsy" class="social-link twitter" target="_blank" rel="noopener noreferrer" title="Twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+        </div>
+
+        <div class="staff-container">
+            <div class="staff-title">Équipe du serveur</div>
+            <div class="staff-list">
+                <div class="staff-member">
+                    <img src="img/staff.jpg" alt="Staff" class="staff-avatar">
+                    <div class="staff-info">
+                        <div class="staff-name">TraiZyy</div>
+                        <div class="staff-rank">Développeur</div>
+                    </div>
+                </div>
+                <!-- Add more staff members as needed -->
+            </div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
